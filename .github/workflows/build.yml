@@ -10,7 +10,7 @@ on:
 env:
   CORE: arduino:avr            # e.g. esp32:esp32, arduino:samd
   FQBN: arduino:avr:uno        # run arduino-cli board listall to find yours
-  SKETCH_PATH: .               # folder containing your .ino (and .cpp/.h files)
+  SKETCH_PATH: button               # folder containing your .ino (and .cpp/.h files)
   BUILD_DIR: build
   # For non-official cores (ESP32, etc.), set the board manager URL:
   # ADDITIONAL_URLS: https://espressif.github.io/arduino-esp32/package_esp32_index.json
@@ -85,4 +85,3 @@ jobs:
         with:
           files: firmware/*
           generate_release_notes: true
-          
